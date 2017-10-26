@@ -10,18 +10,10 @@
 
 <body>
     <h1>XXX</h1>
-    <video id="localStream" width="300" controls></video>
+    <video id="localStream" width="900" controls></video>
 </body>
 <script type="text/javascript">
-navigator.mediaDevices.getUserMedia({ audio: false, video: true })
-    .then( stream => {
-            const video = document.getElementById('localStream');
-            video.srcObject = stream;
-            video.onloadedmetadata = function(e) {
-                video.play();
-            }    
-         })
-        .catch(err => console.log(err));
-</script>
 
+</script>
+<script type="text/javascript" src="bundle.js"></script>
 </html>
